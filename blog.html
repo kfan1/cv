@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kevin Fan" />
+    <meta
+      name="description"
+      content="Welcome to the front page of Kevin's brain. Here I have my blog, my resume, and random stuff I think is cool."
+    />
+    <meta name="keywords" content="resume, cool stuff, blog" />
+    <title>Kevin Fan</title>
+    <link rel="icon" href="/images/floppy-disk.ico" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/mycss.css" />
+    <script src="/js/bootstrap.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        $("#navbar").load("navbar.html");
+        $("#intro").load("text/intro.txt");
+        $("#contact").load("text/contact.txt");
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Page Header -->
+    <header
+      class="masthead"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1470092306007-055b6797ca72?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80');
+      "
+    >
+      <div class="home-navbar sticky-top" id="navbar"></div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1 class="my-name">Kevin's Blog</h1>
+              <h2 class="intro">A collection of Kevin's random musings.</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a class="blog-link" href="/post1.html">
+              <h2 class="post-title">Third post!</h2>
+              <h3 class="post-subtitle">Might be a bit out of order</h3>
+            </a>
+          </div>
+          <hr>
+
+          <div class="post-preview">
+            <a class="blog-link" href="">
+              <h2 class="post-title">First Post</h2>
+              <h3 class="post-subtitle">this is my first post</h3>
+            </a>
+          </div>
+          <hr>
+
+          <div class="post-preview">
+            <a class="blog-link" href="">
+              <h2 class="post-title">Second Post</h2>
+              <h3 class="post-subtitle">this it my second post</h3>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <a class="bottom-links" href="resume.html">Resume</a>
+      <a class="bottom-links" href="https://www.github.com/kfan1">GitHub</a>
+      <p>© 2023 Kevin Fan</p>
+    </div>
+  </body>
+</html>
