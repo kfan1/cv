@@ -5,7 +5,7 @@ export default function main() {
   return (
     <div className={styles.bigBox}>
       <div className={styles.name}>
-        <img className={styles.portrait} src='/images/FullSizeR-modified.png' />
+        <img className={styles.portrait} src='images/FullSizeR-modified.png' />
         <div className={styles.allName}>
           <h1 className={styles.bigName}>Kevin Fan</h1>
           <h3 className={styles.subtitle}>Software Engineer</h3>

@@ -8,9 +8,7 @@ function App() {
   return (
     <div>
       <HeaderContainer />
-      <Routes>
-        <Route exact path='/' element={<MainPage />} />
-      </Routes>
+      <MainPage />      
       <FooterContainer />
     </div>
   );
