@@ -7,7 +7,7 @@ export default function header() {
   return (
     <Navbar className={styles.navbar} expand='lg' variant="dark">
       <Container fluid>
-        <Navbar.Brand className={styles.navbarTitle} href='/'>Kevin Fan</Navbar.Brand>
+        <Navbar.Brand className={styles.navbarTitle} href=''>Kevin Fan</Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarSupportedContent' />
         <Navbar.Collapse id='navbarSupportedContent'>
           <RightSideNavBar />
