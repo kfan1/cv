@@ -40,6 +40,9 @@
 
 .portrait {
   display: inline-block;
+  margin-right: 15px;
+  position: relative;
+  top: -60px;
 }
 
 .name {
@@ -57,7 +60,6 @@
 }
 
 .myIntro {
-  margin-top: 35px;
   font-size: 18px;
 }
 

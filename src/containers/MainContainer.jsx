@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './mainStyles.module.scss';
 
-export default function main() {
+export default function MainContainer() {
   return (
     <div className={styles.bigBox}>
       <div className={styles.name}>
