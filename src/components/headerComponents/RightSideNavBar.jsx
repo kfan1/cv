@@ -6,7 +6,7 @@ import styles from './rightSide.module.scss';
 export default function RightSideNavBar() {
   return (
     <Nav className={styles.rightSide} >
-      <Nav.Link className={styles.rightSideLink} href='Kevin Fan Resume 3-2023.pdf'>
+      <Nav.Link className={styles.rightSideLink} href='Kevin Fan Resume.pdf'>
         Resume
       </Nav.Link>
       <Nav.Link className={styles.rightSideLink} href='https://github.com/kfan1'>
