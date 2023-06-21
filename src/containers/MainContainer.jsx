@@ -33,7 +33,12 @@ export default function MainContainer() {
           Want to talk about football or tech or programming or anything you want? You just need a friend or someone to
           talk to? Send me an email and connect with me!
         </p>
-        <a class={styles.contactMe} target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=kevinlifan@yahoo.com">Contact Me</a>
+        <a
+          class={styles.contactMe}
+          target='_blank'
+          href='https://mail.google.com/mail/?view=cm&fs=1&to=kevin@eleetcoding.com'>
+          Contact Me
+        </a>
       </div>
     </div>
   );
