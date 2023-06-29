@@ -13,6 +13,7 @@ function App() {
     setEnter(true);
     document.querySelector(`.${styles.loadingScreenLeft}`).setAttribute('start', 'yes');
     document.querySelector(`.${styles.loadingScreenRight}`).setAttribute('start', 'yes');
+    document.querySelector(`.${styles.everything}`).style.display = 'block';
   }
 
   let loadingButton;
@@ -34,7 +35,7 @@ function App() {
     ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 100);
   }, []);
 
   return (
@@ -42,9 +43,11 @@ function App() {
       {loadingButton}
       <div className={styles.loadingScreenLeft}></div>
       <div className={styles.loadingScreenRight}></div>
-      <HeaderContainer />
-      <MainContainer />
-      <FooterContainer />
+      <div className={styles.everything}>
+        <HeaderContainer />
+        <MainContainer />
+        <FooterContainer />
+      </div>
     </div>
   );
 }

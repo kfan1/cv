@@ -13,6 +13,7 @@
 .bigName {
   font-size: 70px;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .icons {
@@ -82,4 +83,34 @@
 
 .contactMe:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 1200px) {
+  .bigBox {
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .icons {
+    display: block;
+    width: 100vw;
+    margin: 0;
+    padding: 0 15vw;
+  }
+  .name {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 0 15vw;
+  }
+
+  .bigBox {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bigName {
+    font-size: 40px;
+  }
 }
