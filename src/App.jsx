@@ -17,7 +17,7 @@ function App() {
   }
 
   function exit() {
-    setTimeout(() => setEnter(false), 3000);
+    setTimeout(() => setEnter(false), 3500);
     document.querySelector(`.${styles.loadingScreenLeft}`).setAttribute('start', 'no');
     document.querySelector(`.${styles.loadingScreenRight}`).setAttribute('start', 'no');
   }
@@ -41,7 +41,7 @@ function App() {
     ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 100);
+    setTimeout(() => setLoading(false), 3000);
   }, []);
 
   return (
