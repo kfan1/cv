@@ -7,6 +7,7 @@ import styles from './stylesheets/AppStyles.module.scss';
 function App() {
   return (
     <div>
+      <button className={styles.enterButton}>ENTER</button>
       <div className={styles.loadingScreenLeft}></div>
       <div className={styles.loadingScreenRight}></div>
       <HeaderContainer />
