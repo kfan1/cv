@@ -5,6 +5,8 @@ body {
   background-color: $superLightGrey;
   color: $primary;
   transition: 2s;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @media (prefers-color-scheme: dark) {

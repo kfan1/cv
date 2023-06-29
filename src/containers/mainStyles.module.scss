@@ -1,6 +1,6 @@
 .bigBox {
   padding: 10%;
-  height: 100vh;
+  height: calc(100vh - 125px);
   background: linear-gradient(
     60deg,
     rgba(0, 0, 0, 0) 0%,
