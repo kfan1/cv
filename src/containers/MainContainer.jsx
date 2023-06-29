@@ -23,10 +23,10 @@ export default function MainContainer() {
 
       <div className={styles.icons}>
         <a className={styles.links} href='https://github.com/kfan1'>
-          <i class='fa-brands fa-github'></i>
+          <i className='fa-brands fa-github'></i>
         </a>
         <a className={styles.links} href='https://www.linkedin.com/in/kfan1/'>
-          <i class='fa-brands fa-linkedin'></i>
+          <i className='fa-brands fa-linkedin'></i>
         </a>
         <h3 className={styles.sendEmail}>Send me an email!</h3>
         <p className={styles.contact}>
@@ -34,7 +34,7 @@ export default function MainContainer() {
           talk to? Send me an email and connect with me!
         </p>
         <a
-          class={styles.contactMe}
+          className={styles.contactMe}
           target='_blank'
           href='https://mail.google.com/mail/?view=cm&fs=1&to=kevin@eleetcoding.com'>
           Contact Me

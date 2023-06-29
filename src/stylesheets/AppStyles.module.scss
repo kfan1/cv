@@ -10,6 +10,7 @@
     rgba(0, 0, 0, 0) 50%,
     rgba(0, 0, 0, 0) 100%
   );
+  transition: 3s;
 }
 
 .loadingScreenRight {
@@ -24,15 +25,24 @@
     rgba(20, 20, 20, 1) 50%,
     rgba(20, 20, 20, 1) 100%
   );
+  transition: 3s;
+}
+
+.loadingScreenLeft[start='yes'] {
+  translate: -100vw;
+}
+
+.loadingScreenRight[start='yes'] {
+  translate: 100vw;
 }
 
 .enterButton {
   position: absolute;
   padding: 10px 30px;
   top: 48vh;
-  left: calc(50vw - 76px);
+  left: calc(50vw - 110px);
   z-index: 99;
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   color: white;
   font-size: 36px;
@@ -41,5 +51,42 @@
 
 .enterButton:hover {
   border: solid;
-  border-color: black;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+}
+
+.loadingWheel {
+  position: absolute;
+  top: 41vh;
+  left: calc(50vw - 100px);
+  z-index: 99;
+}
+.loadingWheel div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 144px;
+  height: 144px;
+  margin: 32px;
+  border: 32px solid;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
