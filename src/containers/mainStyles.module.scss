@@ -10,6 +10,16 @@
   );
 }
 
+.xButton {
+  position: absolute;
+  right: 45px;
+  top: 90px;
+  color: rgba(255, 115, 0, 0.7);
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 32px;
+}
+
 .bigName {
   font-size: 70px;
   display: inline-block;

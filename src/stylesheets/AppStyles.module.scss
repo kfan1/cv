@@ -4,8 +4,9 @@
 
 .loadingScreenLeft {
   position: absolute;
+  left: -25vw;
   height: 100vh;
-  width: 100vw;
+  width: 150vw;
   z-index: 9;
   background: linear-gradient(
     60deg,
@@ -14,13 +15,14 @@
     rgba(0, 0, 0, 0) 50%,
     rgba(0, 0, 0, 0) 100%
   );
-  transition: 3s;
+  transition: 4s;
 }
 
 .loadingScreenRight {
   position: absolute;
+  left: -25vw;
   height: 100vh;
-  width: 100vw;
+  width: 150vw;
   z-index: 9;
   background: linear-gradient(
     60deg,
@@ -29,15 +31,15 @@
     rgba(20, 20, 20, 1) 50%,
     rgba(20, 20, 20, 1) 100%
   );
-  transition: 3s;
+  transition: 4s;
 }
 
 .loadingScreenLeft[start='yes'] {
-  translate: -100vw;
+  translate: -200vw;
 }
 
 .loadingScreenRight[start='yes'] {
-  translate: 100vw;
+  translate: 200vw;
 }
 
 .enterButton {

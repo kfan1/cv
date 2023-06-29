@@ -16,6 +16,12 @@ function App() {
     document.querySelector(`.${styles.everything}`).style.display = 'block';
   }
 
+  function exit() {
+    setTimeout(() => setEnter(false), 3000);
+    document.querySelector(`.${styles.loadingScreenLeft}`).setAttribute('start', 'no');
+    document.querySelector(`.${styles.loadingScreenRight}`).setAttribute('start', 'no');
+  }
+
   let loadingButton;
   if (!loading && enter) loadingButton = [];
   if (!loading && !enter)
@@ -45,7 +51,7 @@ function App() {
       <div className={styles.loadingScreenRight}></div>
       <div className={styles.everything}>
         <HeaderContainer />
-        <MainContainer />
+        <MainContainer exit={exit} />
         <FooterContainer />
       </div>
     </div>
