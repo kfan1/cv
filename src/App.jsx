@@ -42,7 +42,7 @@ function App() {
     ];
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 100);
   }, []);
 
   return (

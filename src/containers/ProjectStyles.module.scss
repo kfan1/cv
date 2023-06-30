@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 35px;
+  column-gap: 10vw;
+  align-items: start;
+}
+
+.gitLink {
+  text-align: end;
+}
+
+.projectTitle {
+  font-size: 36px;
+  text-align: end;
+}
+
+.description {
+  font-size: 20px;
+}
