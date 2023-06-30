@@ -35,8 +35,8 @@ export default function MainContainer({ exit }) {
           </a>
           <h3 className={styles.sendEmail}>Send me an email!</h3>
           <p className={styles.contact}>
-            Want to talk about football or tech or programming or anything you want? You just need a friend or someone
-            to talk to? Send me an email and connect with me!
+            Want to talk about football or tech or programming? You just need a friend or someone to talk to? Send me an
+            email and connect with me!
           </p>
           <a
             className={styles.contactMe}
