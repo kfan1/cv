@@ -3,15 +3,17 @@
   grid-template-columns: 1fr 2fr;
   row-gap: 45px;
   align-items: center;
-}
-
-.gitLink {
-  text-align: end;
+  margin-bottom: 50px;
 }
 
 .projectTitle {
   font-size: 36px;
   text-align: end;
+}
+
+.projectTitle:hover {
+  cursor: pointer;
+  color: rgb(185, 185, 185);
 }
 
 .description {
