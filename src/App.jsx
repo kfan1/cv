@@ -3,7 +3,6 @@ import HeaderContainer from './containers/HeaderContainer.jsx';
 import FooterContainer from './containers/FooterContainer.jsx';
 import MainContainer from './containers/MainContainer.jsx';
 import styles from './stylesheets/AppStyles.module.scss';
-import Projects from './containers/ProjectsContainer.jsx';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,10 +45,6 @@ function App() {
     setTimeout(() => setLoading(false), 3000);
   }, []);
 
-  let projectsTab;
-  if (projects) projectsTab = [<Projects />];
-  else projectsTab = [<MainContainer exit={exit} />];
-
   return (
     <div>
       {loadingButton}
@@ -57,7 +52,7 @@ function App() {
       <div className={styles.loadingScreenRight}></div>
       <div className={styles.everything}>
         <HeaderContainer setProjects={setProjects} />
-        {projectsTab}
+        <MainContainer exit={exit} projects={projects} />
         <FooterContainer />
       </div>
     </div>
