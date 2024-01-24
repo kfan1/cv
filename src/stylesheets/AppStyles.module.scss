@@ -3,6 +3,7 @@
 }
 
 .loadingScreenLeft {
+  overflow: hidden;
   position: absolute;
   left: -25vw;
   height: 100vh;
@@ -19,6 +20,7 @@
 }
 
 .loadingScreenRight {
+  overflow: hidden;
   position: absolute;
   left: -25vw;
   height: 100vh;
